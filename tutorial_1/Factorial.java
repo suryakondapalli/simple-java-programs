@@ -2,15 +2,14 @@ package tutorial_1;
 
 public class Factorial {
 
-  public static int factorial(int n){
-      if(n == 1) {
-        return 1;
-      } else{
-        return n * factorial(n-1);
-      }
-  }
-
-	public static void main (String[] args){
-	  System.out.println(factorial(11));
-  }
+	public static void main(String[] args) {
+	  int i,fact=1;
+		int number=5;
+		for (i=1;i<=number;i++)
+		{
+			fact=fact*i;
+		}
+		System.out.println(fact);
+	}
+	
 }
